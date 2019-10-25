@@ -1,0 +1,23 @@
+{
+  "name": "test",
+  "debug": false,
+  "app": {
+    "cfengine": "lucee@5.3.3+62",
+    "sessionCookieSecure": true,
+    "sessionCookieHTTPOnly": true
+  },
+  "jvm": {
+    "heapSize": 512,
+    "minHeapSize": 256
+  },
+  "web": {
+    "directoryBrowsing": false,
+    "http": {
+      "port": 8080
+    },
+    "SSL": {
+      "enable": true,
+      "port": 8443
+    }
+  }
+}

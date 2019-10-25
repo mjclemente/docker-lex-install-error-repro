@@ -1,0 +1,24 @@
+version: '3'
+
+services:
+
+  #APP SERVER
+  app:
+    # build:
+    #   context: .
+    #   ## We use a custom build for a bit more control
+    #   dockerfile: ./build/lucee/Dockerfile
+    image: some.app
+    container_name: some_app
+    environment:
+      PORT: 8080
+      SSL_PORT: 8433
+      DEBUG: "true"
+      cfconfig_adminPassword: commandbox
+
+    ports:
+      - "8080:8080"
+
+    expose:
+      - "8080"
+      - "8433"
